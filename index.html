@@ -169,7 +169,14 @@
 </div>
 
     <script type="text/javascript">
-    		mui.init();
+    		mui.init({
+		  preloadPages:[
+		    {
+		      url:'bws.html',
+		      id:'bws.html'
+		    }
+		  ]
+		});
 		document.getElementById('lijihujiao').addEventListener('tap', function() {
 		  mui.openWindow({
 		    url: 'wating.html', 
@@ -180,7 +187,8 @@
 		document.getElementById('bws').addEventListener('tap', function() {
 		  	mui.openWindow({
 		    url: 'bws.html', 
-		    id:'bws.html',createNew:true
+		    id:'bws.html',
+		    createNew:true
 		  });
 		});
 		document.getElementById('zhuanche').addEventListener('tap', function() {
