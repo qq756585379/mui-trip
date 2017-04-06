@@ -1,0 +1,65 @@
+#offCanvasSide .top_header{
+	margin: 50px auto;
+	text-align: center;
+	background-color: white;
+}
+#offCanvasSide .top_header img{
+	width: 20px;
+	height: 20px;
+	margin-right: 5px;
+}
+#offCanvasSide .top_header a{
+	font-size: 14px;
+	color: #999999;
+}
+/*去掉table-view的上分割线*/
+#offCanvasSide .mui-table-view:before{
+    background-color: #fff;
+}
+#offCanvasSide .mui-table-view-cell{
+	padding: 5px 15px;
+}
+#offCanvasSide .mui-ellipsis{
+	line-height: 40px;
+	color: #999999;
+	font-size: 14px;
+}
+#offCanvasSide .mui-table-view .mui-media>a>img{
+	width: 20px;
+	height: 20px;
+	margin: 10px auto;
+	margin-right: 15px;
+}
+#offCanvasSide *{
+	background-color: #FFFFFF;
+}
+
+
+/*公共样式*/
+.mui-table-view-cell{
+	list-style-type: none;
+}
+.mui-bar .head_titles a{
+	height: 42px;
+	line-height: 42px;
+	color: #b6bbba;
+}
+.mui-bar .head_titles a.active{
+	color: #454545;
+	border-bottom: solid 2px #13868d;
+}
+
+.mui-table-view:before,.mui-table-view:after{
+	background-color: white;
+}
+.mui-input-group:before,.mui-input-group:after,
+.mui-input-group .mui-input-row:after,
+.mui-input-group .mui-input-row:before{
+	background-color: white;
+	height: 0;
+}
+#input_row{
+	display: inline-block;
+	float: left;
+}
+

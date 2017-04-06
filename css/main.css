@@ -1,0 +1,62 @@
+
+.mui-inner-wrap .mui-bar .title_head >a{
+	color: #b6bbba;
+}
+.mui-inner-wrap .mui-bar .title_head >a.mui-active{
+	color: #454545;
+}
+/*去掉上下线*/
+#ul_table_view:before{
+	background-color: #fff;
+}
+#ul_table_view:after{
+	background-color: #fff;
+}
+#ul_table_view li:after{
+	height: 0;
+}
+
+#input_row .mui-input-group:before{
+    background-color: #fff;
+}
+#input_row .mui-input-group:after{
+    background-color: #fff;
+}
+#input_row .mui-input-row:after{
+	background-color: #fff;
+}
+
+#item1 .mui-table-view-cell:after,
+#item3 .mui-table-view-cell:after{
+	background-color: #fff;
+}
+#item2 .mui-table-view{
+	position: relative;
+	border: solid 1px #f5f5f5;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	box-shadow: 2px 2px 2px #ededed;
+}
+#item2 .mui-table-view:before{
+	background-color: #fff;
+}
+#item2 .mui-table-view:after{
+	background-color: #fff;
+}
+#item2 .mui-table-view li img{
+	width: 20px;
+	height: 20px;
+	margin: 10px 5px;
+}
+#item2 .mui-table-view li{
+	text-align: left;
+}
+#item2 #item2_ul li img{
+	width: 14px;
+	height: 18px;
+}
+#item2 #item2_ul .mui-ellipsis{
+	display: inline-block;
+	float: left;
+	line-height: 40px;
+}
