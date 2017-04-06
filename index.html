@@ -110,7 +110,7 @@
 	        <div class="mui-col-sm-8 mui-col-xs-8 mui-text-center">
 	        		<div class="mui-row head_titles">
 	        			<a class="mui-col-sm-4 mui-col-xs-4 active">代驾</a>
-	        		 	<a class="mui-col-sm-4 mui-col-xs-4" id="bws">跑腿</a>
+	        		 	<a class="mui-col-sm-4 mui-col-xs-4" id="bws" onclick="bws()">跑腿</a>
 	         		<a class="mui-col-sm-4 mui-col-xs-4" id="zhuanche">专车</a>
 	        		</div>
 	        </div>  
@@ -177,12 +177,15 @@
 		    id:'wating.html'
 		  });
 		});
-		document.getElementById('bws').addEventListener('tap', function() {
-		  mui.openWindow({
+		function bws(){
+			mui.openWindow({
 		    url: 'bws.html', 
 		    id:'bws.html'
 		  });
-		});
+		}
+//		document.getElementById('bws').addEventListener('tap', function() {
+//		  
+//		});
 		document.getElementById('zhuanche').addEventListener('tap', function() {
 		  mui.openWindow({
 		    url: 'zhuanche.html', 
