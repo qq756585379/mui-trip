@@ -23,7 +23,7 @@
 				margin: 11px 0;
 			}
 		</style>
-		<script src="js/mui.min.js"></script>
+		
 	</head>
 
 	<!-- 主界面不动、菜单移动 -->
@@ -318,11 +318,10 @@
 	</div>
 
 	<body>
-		
+		<script src="js/mui.min.js"></script>
 		<script type="text/javascript">
 			mui.init();
-			
-			mui.ready(function({
+			mui.ready(function(){
 				mui('.mui-scroll-wrapper').scroll({
 					deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
 				});
@@ -361,7 +360,7 @@
 				    createNew:true
 				  });
 				});
-			}));
+			});
 		</script>
 	</body>
 
