@@ -24,6 +24,43 @@
 			}
 		</style>
 		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init();
+			mui('.mui-scroll-wrapper').scroll({
+				deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+			});
+			
+			document.getElementById('index').addEventListener('tap', function() {
+			  mui.openWindow({
+			    url: 'index.html', 
+			    id:'index.html'
+			  });
+			});
+			document.getElementById('zhuanche').addEventListener('tap', function() {
+			  mui.openWindow({
+			    url: 'zhuanche.html', 
+			    id:'zhuanche.html'
+			  });
+			});
+			document.getElementById('bwm').addEventListener('tap', function() {
+			  mui.openWindow({
+			    url: 'bwm.html', 
+			    id:'bwm.html'
+			  });
+			});
+			document.getElementById('dpd').addEventListener('tap', function() {
+			  mui.openWindow({
+			    url: 'dpd.html', 
+			    id:'dpd.html'
+			  });
+			});
+			document.getElementById('bwb').addEventListener('tap', function() {
+			  mui.openWindow({
+			    url: 'bwb.html', 
+			    id:'bwb.html'
+			  });
+			});
+		</script>
 	</head>
 
 	<body>
@@ -302,44 +339,6 @@
 		</div>
 		
 		
-		
-		<script type="text/javascript">
-			mui.init();
-			mui('.mui-scroll-wrapper').scroll({
-				deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
-			});
-			
-			document.getElementById('index').addEventListener('tap', function() {
-			  mui.openWindow({
-			    url: 'index.html', 
-			    id:'index.html'
-			  });
-			});
-			document.getElementById('zhuanche').addEventListener('tap', function() {
-			  mui.openWindow({
-			    url: 'zhuanche.html', 
-			    id:'zhuanche.html'
-			  });
-			});
-			document.getElementById('bwm').addEventListener('tap', function() {
-			  mui.openWindow({
-			    url: 'bwm.html', 
-			    id:'bwm.html'
-			  });
-			});
-			document.getElementById('dpd').addEventListener('tap', function() {
-			  mui.openWindow({
-			    url: 'dpd.html', 
-			    id:'dpd.html'
-			  });
-			});
-			document.getElementById('bwb').addEventListener('tap', function() {
-			  mui.openWindow({
-			    url: 'bwb.html', 
-			    id:'bwb.html'
-			  });
-			});
-		</script>
 	</body>
 
 </html>
