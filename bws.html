@@ -23,10 +23,6 @@
 				margin: 11px 0;
 			}
 		</style>
-		<script src="js/mui.min.js"></script>
-		<script type="text/javascript">
-			mui.init();
-		</script>
 	</head>
 
 	<body>
@@ -304,41 +300,43 @@
 		  </div>
 		</div>
 		
+		<script src="js/mui.min.js"></script>
 		<script type="text/javascript">
-			
-			mui('.mui-scroll-wrapper').scroll({
-				deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
-			});
-			
-			document.getElementById('index').addEventListener('tap', function() {
-			  mui.openWindow({
-			    url: 'index.html', 
-			    id:'index.html',createNew:true
-			  });
-			});
-			document.getElementById('zhuanche').addEventListener('tap', function() {
-			  mui.openWindow({
-			    url: 'zhuanche.html', 
-			    id:'zhuanche.html',createNew:true
-			  });
-			});
-			document.getElementById('bwm').addEventListener('tap', function() {
-			  mui.openWindow({
-			    url: 'bwm.html', 
-			    id:'bwm.html',createNew:true
-			  });
-			});
-			document.getElementById('dpd').addEventListener('tap', function() {
-			  mui.openWindow({
-			    url: 'dpd.html', 
-			    id:'dpd.html',createNew:true
-			  });
-			});
-			document.getElementById('bwb').addEventListener('tap', function() {
-			  mui.openWindow({
-			    url: 'bwb.html', 
-			    id:'bwb.html',createNew:true
-			  });
+			mui.init();
+			mui.ready(function(){
+				mui('.mui-scroll-wrapper').scroll({
+					deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+				});
+				document.getElementById('index').addEventListener('tap', function() {
+				  mui.openWindow({
+				    url: 'index.html', 
+				    id:'index.html',createNew:true
+				  });
+				});
+				document.getElementById('zhuanche').addEventListener('tap', function() {
+				  mui.openWindow({
+				    url: 'zhuanche.html', 
+				    id:'zhuanche.html',createNew:true
+				  });
+				});
+				document.getElementById('bwm').addEventListener('tap', function() {
+				  mui.openWindow({
+				    url: 'bwm.html', 
+				    id:'bwm.html',createNew:true
+				  });
+				});
+				document.getElementById('dpd').addEventListener('tap', function() {
+				  mui.openWindow({
+				    url: 'dpd.html', 
+				    id:'dpd.html',createNew:true
+				  });
+				});
+				document.getElementById('bwb').addEventListener('tap', function() {
+				  mui.openWindow({
+				    url: 'bwb.html', 
+				    id:'bwb.html',createNew:true
+				  });
+				});
 			});
 		</script>
 	</body>
