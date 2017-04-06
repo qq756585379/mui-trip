@@ -109,8 +109,8 @@
 			    	    </div>
 			        <div class="mui-col-sm-8 mui-col-xs-8 mui-text-center">
 			        		<div class="mui-row head_titles">
-			        			<a class="mui-col-sm-4 mui-col-xs-4" href="index.html">代驾</a>
-			        		 	<a class="mui-col-sm-4 mui-col-xs-4" href="bws.html">跑腿</a>
+			        			<a class="mui-col-sm-4 mui-col-xs-4" id="index">代驾</a>
+			        		 	<a class="mui-col-sm-4 mui-col-xs-4" id="bws">跑腿</a>
 			         		<a class="mui-col-sm-4 mui-col-xs-4 active">专车</a>
 			        		</div>
 			        </div>  
@@ -172,6 +172,24 @@
 		<script src="js/mui.min.js"></script>
 		<script type="text/javascript">
 			mui.init();
+			document.getElementById('index').addEventListener('tap', function() {
+			  mui.openWindow({
+			    url: 'index.html', 
+			    id:'index.html'
+			  });
+			});
+			document.getElementById('bws').addEventListener('tap', function() {
+			  mui.openWindow({
+			    url: 'bws.html', 
+			    id:'bws.html'
+			  });
+			});
+			document.getElementById('lijihujiao').addEventListener('tap', function() {
+			  mui.openWindow({
+			    url: 'wating.html', 
+			    id:'wating.html'
+			  });
+			});
 		</script>
 	</body>
 

@@ -7,6 +7,11 @@
     <link href="css/mui.min.css" rel="stylesheet"/>
     <link rel="stylesheet" type="text/css" href="css/leftmenu.css"/>
     <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    	
+	<script src="js/mui.min.js"></script>
+	<script type="text/javascript" charset="utf-8">
+	  	mui.init();
+	</script>
 </head>
 <body>
  
@@ -105,8 +110,8 @@
 	        <div class="mui-col-sm-8 mui-col-xs-8 mui-text-center">
 	        		<div class="mui-row head_titles">
 	        			<a class="mui-col-sm-4 mui-col-xs-4 active">代驾</a>
-	        		 	<a class="mui-col-sm-4 mui-col-xs-4" href="bws.html">跑腿</a>
-	         		<a class="mui-col-sm-4 mui-col-xs-4" href="zhuanche.html">专车</a>
+	        		 	<a class="mui-col-sm-4 mui-col-xs-4" id="bws">跑腿</a>
+	         		<a class="mui-col-sm-4 mui-col-xs-4" id="zhuanche">专车</a>
 	        		</div>
 	        </div>  
 	        <div class="mui-col-sm-2 mui-col-xs-2 mui-text-center"></div> 
@@ -152,7 +157,7 @@
 	                <p style="color: #fc7d45;font-size: 12px;display: inline-block;line-height: 40px;position: absolute;right: 15px;">价格详情</p>
 	            </div>
     			</li>
-    			<p style="position: absolute;bottom: 15px;font-size: 15px;color: #999999;left: 0;right: 0;">客服热线：400-727-8976</p>
+    			<p style="position: absolute;bottom: 15px;font-size: 15px;color: #999999;left: 0;right: 0;">客服热线:400-727-8976</p>
    		</div>
    		<!--代驾-->
    		
@@ -162,17 +167,28 @@
   </div>
 			
 </div>
-	
-<script src="js/mui.min.js"></script>
-<script type="text/javascript" charset="utf-8">
-  	mui.init();
-	document.getElementById('lijihujiao').addEventListener('tap', function() {
-	  mui.openWindow({
-	    url: 'wating.html', 
-	    id:'wating.html'
-	  });
-	});
-</script>
+
     
+    <script type="text/javascript">
+    		mui.init();
+		document.getElementById('lijihujiao').addEventListener('tap', function() {
+		  mui.openWindow({
+		    url: 'wating.html', 
+		    id:'wating.html'
+		  });
+		});
+		document.getElementById('bws').addEventListener('tap', function() {
+		  mui.openWindow({
+		    url: 'bws.html', 
+		    id:'bws.html'
+		  });
+		});
+		document.getElementById('zhuanche').addEventListener('tap', function() {
+		  mui.openWindow({
+		    url: 'zhuanche.html', 
+		    id:'zhuanche.html'
+		  });
+		});
+	</script>
 </body>
 </html>

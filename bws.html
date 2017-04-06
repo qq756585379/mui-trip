@@ -23,6 +23,7 @@
 				margin: 11px 0;
 			}
 		</style>
+		<script src="js/mui.min.js"></script>
 	</head>
 
 	<body>
@@ -121,9 +122,9 @@
 			    	    </div>
 			        <div class="mui-col-sm-8 mui-col-xs-8 mui-text-center">
 			        		<div class="mui-row head_titles">
-			        			<a class="mui-col-sm-4 mui-col-xs-4" href="index.html">代驾</a>
+			        			<a class="mui-col-sm-4 mui-col-xs-4" id="index">代驾</a>
 			        		 	<a class="mui-col-sm-4 mui-col-xs-4 active">跑腿</a>
-			         		<a class="mui-col-sm-4 mui-col-xs-4" href="zhuanche.html">专车</a>
+			         		<a class="mui-col-sm-4 mui-col-xs-4" id="zhuanche">专车</a>
 			        		</div>
 			        </div>  
 			        <div class="mui-col-sm-2 mui-col-xs-2 mui-text-center"></div> 
@@ -144,17 +145,17 @@
 					       		    	</a>
 		            	   			 </div>
 			                	    <div class="mui-col-sm-3 mui-col-xs-3  mui-text-center">
-					       		    	<a href="bwm.html">
+					       		    	<a id="bwm">
 					       		    		<img src="images/icon_bwm.png" style="width: 37px;height: 53px;"/>
 					       		    	</a>
 			                	    </div>
 			                	    <div class="mui-col-sm-3 mui-col-xs-3  mui-text-center">
-					       		    	<a href="dpd.html">
+					       		    	<a id="dpd">
 					       		    		<img src="images/icon_dpd.png" style="width: 37px;height: 53px;"/>
 					       		    	</a>
 			                	    </div>
 			                	    <div class="mui-col-sm-3 mui-col-xs-3  mui-text-center">
-					       		    	<a href="bwb.html">
+					       		    	<a id="bwb">
 					       		    		<img src="images/icon_bwb.png" style="width: 37px;height: 53px;"/>
 					       		    	</a>
 			                	    </div>
@@ -301,11 +302,42 @@
 		</div>
 		
 		
-		<script src="js/mui.min.js"></script>
+		
 		<script type="text/javascript">
 			mui.init();
 			mui('.mui-scroll-wrapper').scroll({
 				deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+			});
+			
+			document.getElementById('index').addEventListener('tap', function() {
+			  mui.openWindow({
+			    url: 'index.html', 
+			    id:'index.html'
+			  });
+			});
+			document.getElementById('zhuanche').addEventListener('tap', function() {
+			  mui.openWindow({
+			    url: 'zhuanche.html', 
+			    id:'zhuanche.html'
+			  });
+			});
+			document.getElementById('bwm').addEventListener('tap', function() {
+			  mui.openWindow({
+			    url: 'bwm.html', 
+			    id:'bwm.html'
+			  });
+			});
+			document.getElementById('dpd').addEventListener('tap', function() {
+			  mui.openWindow({
+			    url: 'dpd.html', 
+			    id:'dpd.html'
+			  });
+			});
+			document.getElementById('bwb').addEventListener('tap', function() {
+			  mui.openWindow({
+			    url: 'bwb.html', 
+			    id:'bwb.html'
+			  });
 			});
 		</script>
 	</body>
